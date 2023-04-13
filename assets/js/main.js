@@ -35,11 +35,11 @@ function onSuccess(e) {
 }
 
 function onError(err) {
-    if (erro.code === 1) {
-        btn.innerText = erro.message;
+    if (err.code === 1) {
+        btn.innerText = err.message;
     }
-    else if (erro.code === 2) {
-        btn.innerText = erro.message;
+    else if (err.code === 2) {
+        btn.innerText = err.message;
     }
     else {
         btn.innerText = "something went wrong";
